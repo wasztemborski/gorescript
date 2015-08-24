@@ -85,6 +85,8 @@ GS.MapEditor.prototype = {
 
 		$("#map-name").val(that.mapManager.map.name);
 
+		this.importDatMap();
+
 		this.draw();
 	},
 
@@ -257,6 +259,10 @@ GS.MapEditor.prototype = {
 			that.saveMap(map);
 		});
 
+		$("#button-clear").click(function() {
+			that.clearMap();
+		});
+
 		$("input[type=text]").keydown(function(e) {
 			if (e.which === 13) {
 				e.preventDefault();
@@ -271,13 +277,15 @@ GS.MapEditor.prototype = {
 	},
 
 	saveMap: function(map) {
-		$.ajax({
-			type: "POST",
-			url: "../../../node/urlrewrite/server/save-map",
-			data: JSON.stringify(map),
-		}).done(function(msg) {
-			alert(msg);
-		});
+		// $.ajax({
+		// 	type: "POST",
+		// 	url: "../../../node/urlrewrite/server/save-map",
+		// 	data: JSON.stringify(map),
+		// }).done(function(msg) {
+		// 	alert(msg);
+		// });
+
+		window.localStorage.datMap = JSON.stringify(map);
 	},
 
 	updatePlayerStartPosition: function() {
@@ -287,6 +295,24 @@ GS.MapEditor.prototype = {
 
 	updateTriangles: function() {
 		$("#triangle-field").text(this.mapManager.map.triangleCount);
+	},
+
+	clearMap: function() {
+		window.localStorage.removeItem("datMap");
+		window.location.reload();
+	},
+
+	importDatMap: function() {
+		var datMap = window.localStorage.datMap;
+
+		if (datMap) {
+			this.mapManager.importMap(datMap);
+			this.actionLog.length = 0;
+
+			for (var i in this.layerTools) {
+				this.layerTools[i].resetSelection();
+			}
+		}
 	},
 
 	importMap: function() {

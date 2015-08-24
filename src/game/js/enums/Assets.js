@@ -126,7 +126,7 @@ GS.Assets[GS.AssetTypes.MusicTrack] = {
 };
 
 GS.Assets[GS.AssetTypes.Map] = {
-	"airstrip1": 			{ filename: "airstrip1.js" },
+	"datMap": 				{ filename: "airstrip1.js" },
 	"drencrom":				{ filename: "drencrom.js" },
 	"sacrosanct":			{ filename: "sacrosanct.js" },
 };

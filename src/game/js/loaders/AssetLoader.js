@@ -166,10 +166,15 @@ GS.AssetLoader.prototype = {
 	loadMap: function(name, filename) {
 		var that = this;
 
-		this.mapLoader.load(name, filename, function(map) {
-			that.assets[GS.AssetTypes.Map][name] = map;
-			that.checkIfFullyLoaded();
-		});
+		if (name !== "datMap") {
+			this.mapLoader.load(name, filename, function(map) {
+				that.assets[GS.AssetTypes.Map][name] = map;
+				that.checkIfFullyLoaded();
+			});
+		} else {
+			that.assets[GS.AssetTypes.Map][name] = this.mapLoader.loadDatMap();
+			this.checkIfFullyLoaded();
+		}
 	},
 
 	loadScript: function(name, filename) {

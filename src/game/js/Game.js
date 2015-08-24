@@ -28,7 +28,7 @@ GS.Game = function() {
 	this.cameraFov = GS.Settings.fov;
 	this.cameraFar = 1500;
 
-	this.noMenu = false;
+	this.noMenu = true;
 	this.useAssetsZip = false;
 
 	if (GS.BuildOverride === true) {
@@ -261,8 +261,8 @@ GS.Game.prototype = GS.inherit(GS.Base, {
 			this.closeMenu();
 		}
 
-		this.mapName = "airstrip1"; 
-		this.nextState = GS.GameStates.Dispose; 
+		this.mapName = "datMap";
+		this.nextState = GS.GameStates.Dispose;
 	},
 
 	initComponents: function(assets) {

@@ -63,7 +63,8 @@ GS.MapManager.prototype = {
 	},
 
 	generateName: function() {
-		return "random_" + Math.floor(Math.random() * 256);
+		//return "random_" + Math.floor(Math.random() * 256);
+		return "datMap";
 	},
 
 	modifyZoom: function(value) {

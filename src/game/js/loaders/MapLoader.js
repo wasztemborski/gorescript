@@ -7,6 +7,16 @@ GS.MapLoader = function() {
 GS.MapLoader.prototype = {
 	constructor: GS.MapLoader,
 
+	loadDatMap: function() {
+		var datMap = window.localStorage.datMap;
+
+		if (!datMap) {
+			alert("datMap not found");
+		}
+
+		return datMap;
+	},
+
 	load: function(name, filename, callback) {
 		var that = this;
 		var path = this.mapPath + filename;
