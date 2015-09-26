@@ -56,6 +56,7 @@ GS.Assets[GS.AssetTypes.Texture] = {
 
 GS.Assets[GS.AssetTypes.CubeTexture] = {
 	"skybox1": 				{ filename: "skybox1" },
+	"lodz": 				{ filename: "lodz" },
 };
 
 GS.Assets[GS.AssetTypes.UIWidget] = {

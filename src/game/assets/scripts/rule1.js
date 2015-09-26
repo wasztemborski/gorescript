@@ -23,6 +23,8 @@ GS.MapScripts.rule1.prototype = GS.inherit(GS.MapScript, {
     this.corridorDoor2 = this.lib.doors[1683];
     this.corridorDoor3 = this.lib.doors[1375];
     this.corridorDoor4 = this.lib.doors[1373];    
+    this.secretDoor = this.lib.doors[123];    
+    
     
     this.techDoor1 = this.lib.doors[1561];
     this.techDoor2 = this.lib.doors[1558];
@@ -47,6 +49,8 @@ GS.MapScripts.rule1.prototype = GS.inherit(GS.MapScript, {
     this.exitDoor.automatic = false;
     this.techDoor1.automatic = false;
     this.techDoor2.automatic = false;
+    
+    this.secretDoorIsOpen = false;
 	
 	},
 
@@ -72,12 +76,7 @@ GS.MapScripts.rule1.prototype = GS.inherit(GS.MapScript, {
 			this.elevator3Door.openSilent();
 			this.elevator4Door.openSilent();
 
-this.techDoor2.openSilent();
-		}
-		else if (zone.name == "secret") {
-	
-      this.foundSecret();
-		}
+		}	
 		else if (zone.name == "exit") {
 	
       this.mapWon = true
@@ -101,6 +100,11 @@ this.techDoor2.openSilent();
     {
       this.techDoor1.openSilent();
 			this.techDoor2.openSilent();
+    }
+    if (door  === this.secretDoor && !this.secretDoorIsOpen)
+    {
+        this.foundSecret();
+        this.secretDoorIsOpen = true;
     }
 	},
 

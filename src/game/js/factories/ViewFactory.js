@@ -60,7 +60,7 @@ GS.ViewFactory.prototype = {
 	},
 
 	getSkyboxMesh: function() {
-		var name = "skybox1";
+		var name = "lodz";
 		
 		var tex = this.cubeTextures[name];
 		tex.format = THREE.RGBFormat;
