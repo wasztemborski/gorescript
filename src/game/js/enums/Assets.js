@@ -65,6 +65,7 @@ GS.Assets[GS.AssetTypes.UIWidget] = {
 	"thumb_airstrip1":		{ filename: "thumb_airstrip1.png" },
 	"thumb_drencrom":		{ filename: "thumb_drencrom.png" },
 	"thumb_sacrosanct":		{ filename: "thumb_sacrosanct.png" },
+	"thumb_rule1":			{ filename: "thumb_rule1.png" },	
 };
 
 GS.Assets[GS.AssetTypes.Mesh] = {
@@ -129,10 +130,12 @@ GS.Assets[GS.AssetTypes.Map] = {
 	"airstrip1": 			{ filename: "airstrip1.js" },
 	"drencrom":				{ filename: "drencrom.js" },
 	"sacrosanct":			{ filename: "sacrosanct.js" },
+	"rule1":				{ filename: "rule1.js" },
 };
 
 GS.Assets[GS.AssetTypes.Script] = {
 	"airstrip1": 			{ filename: "airstrip1.js" },
 	"drencrom":				{ filename: "drencrom.js" },
 	"sacrosanct":			{ filename: "sacrosanct.js" },
+	"rule1":				{ filename: "rule1.js" },
 };
