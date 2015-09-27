@@ -28,6 +28,7 @@ music
 simple_action_beat		http://opengameart.org/content/simple-action-beat
 angry_robot_3			http://www.nosoapradio.us/
 tower_defense_theme		http://opengameart.org/content/tower-defense-theme
+mad_as_hell				https://www.youtube.com/watch?v=rNxoLJy3m3s
 
 skybox
 ------

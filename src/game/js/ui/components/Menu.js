@@ -364,21 +364,25 @@ GS.UIComponents.Menu.prototype = {
 
 		this.dblLabelCredits1 = this.creditsPanel.addDoubleLabel("code, \"art\"", "sergiu valentin bucur");
 
+		this.dblLabelCredits27 = this.creditsPanel.addDoubleLabel("rule1 map", "me");
+
 		this.creditsPanel.addEmptyRow();
 
 		this.dblLabelCredits23 = this.creditsPanel.addDoubleLabel("music", "DST");
 		this.dblLabelCredits24 = this.creditsPanel.addDoubleLabel("", "3uhox");
-
+		this.dblLabelCredits26 = this.creditsPanel.addDoubleLabel("", "Network - Mad as Hell Scene");
+		
 		this.creditsPanel.addEmptyRow();
 
 		this.dblLabelCredits3 = this.creditsPanel.addDoubleLabel("sound effects", "freesound.org");
 		this.dblLabelCredits4 = this.creditsPanel.addDoubleLabel("", "opengameart.org");
+		
 
 		this.creditsPanel.addEmptyRow();
 
-		this.dblLabelCredits5 = this.creditsPanel.addDoubleLabel("skybox texture", "alexcpeterson.com/spacescape");
+		//this.dblLabelCredits5 = this.creditsPanel.addDoubleLabel("skybox texture", "alexcpeterson.com/spacescape");
 
-		this.creditsPanel.addEmptyRow();
+		//this.creditsPanel.addEmptyRow();
 
 		this.dblLabelCredits6 = this.creditsPanel.addDoubleLabel("frameworks", "three.js");
 		this.dblLabelCredits7 = this.creditsPanel.addDoubleLabel("", "tween.js");
@@ -403,7 +407,7 @@ GS.UIComponents.Menu.prototype = {
 		this.label1.fontSize = 30;
 		this.children.push(this.label1);
 
-		this.label3 = new GS.UIComponents.MenuLabel(this.cvs, "feedback: timeinvariantgames @ gmail.com",
+		this.label3 = new GS.UIComponents.MenuLabel(this.cvs, "game engine author: timeinvariantgames",
 			new THREE.Vector2(-12, -25), new THREE.Vector2(1, 1));
 		this.label3.textAlign = "right";
 		this.label3.fontSize = 30;

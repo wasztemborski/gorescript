@@ -1,5 +1,5 @@
-GS.GameVersion = "v1.1";
-GS.BuildReleaseDate = "january 3, 2015";
+GS.GameVersion = "v1.1 (Forked)";
+GS.BuildReleaseDate = "September 27, 2015";
 
 GS.GameStates = {
 	Dispose: 0,
@@ -261,7 +261,7 @@ GS.Game.prototype = GS.inherit(GS.Base, {
 			this.closeMenu();
 		}
 
-		this.mapName = "airstrip1"; 
+		this.mapName = "rule1"; 
 		this.nextState = GS.GameStates.Dispose; 
 	},
 

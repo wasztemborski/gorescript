@@ -3,7 +3,7 @@ GS.MapScripts.rule1 = function(gridObjectLibrary) {
 
 	this.mapName = "rule1";
 	this.maxSecrets = 1;
-	this.musicTrack = "angry_robot_3";
+	this.musicTrack = "mad_as_hell";
 };
 
 GS.MapScripts.rule1.prototype = GS.inherit(GS.MapScript, {
@@ -23,7 +23,7 @@ GS.MapScripts.rule1.prototype = GS.inherit(GS.MapScript, {
     this.corridorDoor2 = this.lib.doors[1683];
     this.corridorDoor3 = this.lib.doors[1375];
     this.corridorDoor4 = this.lib.doors[1373];    
-    this.secretDoor = this.lib.doors[123];    
+    this.secretDoor = this.lib.doors[1837];    
     
     
     this.techDoor1 = this.lib.doors[1561];
