@@ -245,8 +245,8 @@ GS.UIComponents.Menu.prototype = {
 		//this.btnLevel1.onClick = function() { GAME.loadLevel("drencrom"); }
 		//this.btnLevel2 = this.levelSelectPanel.addImageButton("sacrosanct", this.assets.images.thumb_sacrosanct);
 		//this.btnLevel2.onClick = function() { GAME.loadLevel("sacrosanct"); }
-		this.btnLevel3 = this.levelSelectPanel.addImageButton("rule1", this.assets.images.thumb_rule1);
-		this.btnLevel3.onClick = function() { GAME.loadLevel("rule1"); }		
+		this.btnLevel3 = this.levelSelectPanel.addImageButton("floor6", this.assets.images.thumb_floor6);
+		this.btnLevel3.onClick = function() { GAME.loadLevel("floor6"); }		
 		
 		
 		this.levelSelectPanel.fontSize = 40;
@@ -364,7 +364,7 @@ GS.UIComponents.Menu.prototype = {
 
 		this.dblLabelCredits1 = this.creditsPanel.addDoubleLabel("code, \"art\"", "sergiu valentin bucur");
 
-		this.dblLabelCredits27 = this.creditsPanel.addDoubleLabel("rule1 map", "me");
+		this.dblLabelCredits27 = this.creditsPanel.addDoubleLabel("floor6 map", "me");
 
 		this.creditsPanel.addEmptyRow();
 

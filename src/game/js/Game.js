@@ -261,7 +261,7 @@ GS.Game.prototype = GS.inherit(GS.Base, {
 			this.closeMenu();
 		}
 
-		this.mapName = "rule1"; 
+		this.mapName = "floor6"; 
 		this.nextState = GS.GameStates.Dispose; 
 	},
 
