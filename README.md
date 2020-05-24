@@ -1,14 +1,10 @@
-gorescript
+Panda Doom
 ==========
 
-The goal of this project is to build **a Doom-like game from scratch**, complete with its **own asset creation toolchain**.
+![Preview](https://raw.githubusercontent.com/wasztemborski/gorescript/master/preview/preview.png)
 
-Besides the game itself, it features:
+Fork of the **gorescript** project, enrieched with the real building map of  [Sterlinga Business Center](https://goo.gl/maps/hCiS2aXbPN68dv8q6) in Lodz.
 
-* A 2.5D sector-based **map editor**
-* A basic **voxel editor** for monster, weapon and powerup meshes
-
-**See [releases](https://github.com/timeinvariant/gorescript/releases) for corresponding asset bundles.**
 
 #### Guides
 
@@ -18,7 +14,7 @@ Besides the game itself, it features:
 
 * How to build and run gorescript (/build folder)
 
-* How to configure the save server for the map/voxel editors
+* How to configure the save server for the map/voxel editorgorescripts
 
 * How to use the map editor
 
